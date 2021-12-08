@@ -48,6 +48,7 @@ Issue、PR、纠错、资料、选课/考试攻略，Totally Accepts.
   
 推荐一门课程的目录格式为
 
+```markdown
 - 试卷
   - 往年真题
     - 2020...
@@ -59,6 +60,7 @@ Issue、PR、纠错、资料、选课/考试攻略，Totally Accepts.
   - slides
 - 笔记
 - 其他
+```
 
 ### 方法二
 
