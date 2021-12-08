@@ -1,0 +1,156 @@
+
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<STYLE>
+BR.page { page-break-after: always }
+</STYLE>
+</head><body><center><h1>2014-2015山东大学操作系统试题</h1></center>
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">山东大学2014-2015年操作系统试题</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;"> </p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">一、解释概念（3*5=15分）</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">1、Thread</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">2、Race Condition</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">3、RAID</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">4、Device Driver</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">5、System Call</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;"> </p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">二、</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">1、简述磁盘分配的三种方式（continuous、linked、indexed）和各自优缺点（6分）</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">2、简述死锁的避免、死锁预防并比较区别（6分）</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">3、访存操作可能会导致IO的进行，某进程读写文件时可能并没有IO设备执行，为什么？（8分）</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;"> </p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">三、以下是四个进程的到达时间和运行时间。</p>
+                
+            
+                
+                    
+                        <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">
+                            <img src="http://www.021xie.com/img.php?4e6daa7858f5f61fb6366643?pn=1&amp;x=0&amp;y=0&amp;raww=642&amp;rawh=123&amp;o=jpg_6_0_______&amp;type=pic&amp;aimh=45.981308411214954&amp;md5sum=f7c98f72f18c3467cc15c1f9ba3b3135&amp;sign=4aa84202d7&amp;zoom=&amp;png=0-&amp;jpg=0-">
+                        </p>
+                    
+                    
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">分别画出FIFO和SJF调度的甘特图，并计算平均等待时间。</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;"> </p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">四、某磁盘逻辑地址32位，页大小16K，页表项大小4B</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">1、采用多层页表结构，该采用几层页表？页偏移多少比特？画出地址分配。</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">2、对逻辑地址54321（10进制），简述求实际地址的过程（忽略缺页中断）</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">3、CPU和操作系统在分页中各自承担了那些工作，简要说明</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;"> </p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">五、</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">1、画出进程的状态图（new、ready、running、wait、terminated），并标注转化条件。</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">2、简述阻塞、饥饿、死锁的区别。</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">3、FIFO和LRU的页面置换算法哪个更好,为什么？</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;"> </p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">六、</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">结合你所学的计算机知识，简述保护的概念。（卷子上提示：从硬件层面、文件管理、设备管理、存储管理、进程同步等方面）(10分)</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;"> </p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">七、从前有座山，山上有座庙，山下有口井。庙里小和尚需要挑水。有人舞担，有人拿桶，有人诵挑水秘诀。挑水时，三个和尚必须一人持担，一人拿桶、一人诵挑水秘诀(同时进行)后方能挑水。每个和尚都是先喜欢诵诀，其次持担、其次持桶。请写出信号量和相关伪代码。</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">Author:hagen @ online</p>
+                
+            
+                
+                    <p class="MsoNormal" style="line-height: 150%; font-size:14pt; text-indent: 21pt; font-family: 瀹嬩綋;">Contributor:YCL HXY</p>
+                
+            
+            
+            
+
+            
+        </body></html>
