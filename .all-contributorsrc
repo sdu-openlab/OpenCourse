@@ -1,0 +1,14 @@
+{
+  "projectName": "OpenCourse",
+  "projectOwner": "sdu-openlab",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 77,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [],
+  "contributorsPerLine": 7
+}

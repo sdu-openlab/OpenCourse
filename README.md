@@ -1,4 +1,7 @@
 # SDU 课程资料共享计划 (试运行，仅 openlab)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+<!-- [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-) -->
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 前人走过的弯路，后人就不必再走。
 
@@ -127,9 +130,19 @@ Issue、PR、纠错、资料、选课/考试攻略，Totally Accepts.
 
 ## 致谢
 
-### 主理人与维护者
+### 贡献者 ✨
 
-### 贡献者
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
 ### 建设参考
 
