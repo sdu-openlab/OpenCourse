@@ -88,7 +88,7 @@ Issue、PR、纠错、资料、选课/考试攻略，Totally Accepts.
 
 请下载 vscode 插件 Markdown lint 插件，严格遵守与维护书写格式。
 
-commit 记录请尽量规范填写，方便追溯与维护。
+请查看 [维护者手册.md](/维护者手册)
 
 ## 致谢
 
