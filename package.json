@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "contributors:add": "all-contributors add",
-    "contributors:generate": "all-contributors generate"
+    "contributors": "all-contributors check && all-contributors generate"
   },
   "repository": {
     "type": "git",
