@@ -27,8 +27,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: check
-        run: yarn all-contributors check
+        run: npx all-contributors check
 
       # Runs a set of commands using the runners shell
       - name: generate
-        run: yarn all-contributors generate
+        run: npx all-contributors generate
