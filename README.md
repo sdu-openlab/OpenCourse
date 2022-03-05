@@ -3,6 +3,8 @@
 <!-- [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-) -->
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+> 目前 qer 未在维护，若想拥有权限可直接联系授予，或者找hkq
+
 前人走过的弯路，后人就不必再走。
 
 本计划旨在维护一个公开的、易于获取的和大家能够共同完善、积累的课程共享资料宝库。
