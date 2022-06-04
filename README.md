@@ -1,6 +1,6 @@
-# SDU 课程资料共享计划 (试运行，仅 openlab)
+# SDUCS 课程资料共享计划 (试运行，仅 openlab)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<!-- [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-) -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > 目前 qer 未在维护，若想拥有权限可直接联系授予，或者找hkq
@@ -11,11 +11,11 @@
 
 让大家不必有问题只去 CSDN，而是能够获取世一大学长学姐们留下的宝贵财富。
 
-高效率努力学习课程知识，从我做起。🤭
+高效率努力学习课程知识，从我做起。
 
 ## 前言
 
-懒得写了，抄抄其他大学的 💪
+懒得写了，抄抄其他大学的 
 
 北航前言
 > 学习从来都不是一个人的战斗，互相帮助才是集体的作战方式！
@@ -88,6 +88,8 @@ Issue、PR、纠错、资料、选课/考试攻略，Totally Accepts.
     - 毛概选择 500 道.pdf
     - 做了很有用的高数 10000 道题目.pdf
     - ...
+  - 考试大纲.pdf
+  - ...
 - 笔记
   - xxx课期末复习笔记手写版.pdf
   - imooc 课程笔记.pdf
