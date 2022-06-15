@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>计算机图形学之光栅图形学——多边形的扫描转换算法简介 - Maples7 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=-hy83QNg62d4qYibixJzxMJkbf1P9fTBlqv7SK5zVL01"/>
+<link id="MainCss" type="text/css" rel="stylesheet" href="/skins/LuxInteriorDark/bundle-LuxInteriorDark.css?v=gW5LiWuuDl_DYvHPSiVf9j0P0lsxKOjmdNS7WdcyR6Y1"/>
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/LuxInteriorDark/bundle-LuxInteriorDark-mobile.css?v=d9LctKHRIQp9rreugMcQ1-UJuq_j1fo0GZXTXj8Bqrk1"/>
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/maples7/rss"/>
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/maples7/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/maples7/wlwmanifest.xml"/>
+<script src="//common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+<script type="text/javascript">var currentBlogApp = 'maples7', cb_enable_mathjax=false;var isLogined=false;</script>
+<script src="/bundles/blog-common.js?v=taItysi72HxMPeH9Xg5nAYabRul6hhgahi3tVIMIKV81" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<div id="container">
+	<div id="header">
+<div id="top">
+			<h1><a id="Header1_HeaderTitle" class="weblogtitle" href="http://www.cnblogs.com/maples7/">Maples7</a></h1>
+			<p>全站转移至：maples7.com</p>
+			</div>
+<div id="navstats"><div id="blog_stats">
+posts - 49, comments - 39, trackbacks - 0, articles - 0</div></div><div id="nav">
+<ul>
+	<li>
+		</li>
+	<li>
+		<a id="blog_nav_myhome" href="http://www.cnblogs.com/maples7/">首页</a></li>
+	<li>
+		</li>
+	<li>
+		<a id="blog_nav_contact" accesskey="9" rel="nofollow" href="https://msg.cnblogs.com/send/Maples7">联系</a></li>
+	<li>
+		<a id="blog_nav_admin" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+<span>
+	<a id="blog_nav_rss_image" href="http://www.cnblogs.com/maples7/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>
+	<a id="blog_nav_rss" href="http://www.cnblogs.com/maples7/rss">订阅</a>
+</span>
+</div>
+
+
+</div>
+	<div class="clr"></div>
+	<div id="sidebar-a">
+		
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+<div id="news">
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script></div>
+
+			<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script>
+		
+	</div>
+	<div id="content">
+		
+<div id="post_detail">
+	<div class="post">
+		<div class="posthead">
+			<h2>
+				<a id="cb_post_title_url" class="singleposttitle" href="http://www.cnblogs.com/maples7/p/4419544.html">计算机图形学之光栅图形学——多边形的扫描转换算法简介</a>
+			</h2>
+ 			Posted on <span id="post-date">2015-04-12 15:09</span> <a href='http://www.cnblogs.com/maples7/'>Maples7</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="https://i.cnblogs.com/EditPosts.aspx?postid=4419544" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(4419544);return false;">收藏</a>
+			<script type="text/javascript">var allowComments=true,cb_blogId=201922,cb_entryId=4419544,cb_blogApp=currentBlogApp,cb_blogUserGuid='18a4fe49-6f58-e411-b908-9dcfd8948a71',cb_entryCreatedDate='2015/4/12 15:09:00';loadViewCount(cb_entryId);var cb_postType=1;</script>
+			
+		</div>
+		<div class="postbody"><div id="cnblogs_post_body" class="blogpost-body"><p><strong>本文是对 赵明老师 <a href="http://www.icourse163.org/course/cau-45006#/info" target="_blank">《计算机图形学》MOOC课程</a>&nbsp;部分章节的小总结。</strong></p>
+<p>&nbsp;</p>
+<p>多边形有两种表示方法：顶点表示和点阵表示。</p>
+<p><img src="https://images0.cnblogs.com/blog2015/683642/201504/121501299465301.jpg" alt="" width="300" /></p>
+<p><img src="https://images0.cnblogs.com/blog2015/683642/201504/121502499153770.jpg" alt="" width="200" /><img src="https://images0.cnblogs.com/blog2015/683642/201504/121504066189070.jpg" alt="" width="200" /></p>
+<p><img src="https://images0.cnblogs.com/blog2015/683642/201504/121505544935747.jpg" alt="" width="200" /></p>
+<p><img src="https://images0.cnblogs.com/blog2015/683642/201504/121508326809487.jpg" alt="" width="400" /></p>
+<p>&nbsp;</p>
+<p>X-扫描线算法：</p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121516384776340.jpg" alt="" width="400" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121519175247951.jpg" alt="" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121523067747980.jpg" alt="" /></p>
+<p>　　算法步骤概括如下：</p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121523534468987.jpg" alt="" width="300" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121526378835151.jpg" alt="" width="300" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121529177438646.jpg" alt="" width="300" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121531407278498.jpg" alt="" width="300" /></p>
+<p>　　注意：</p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121533479467630.jpg" alt="" width="400" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121539026337426.jpg" alt="" width="400" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121541402278280.jpg" alt="" width="400" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121546136806206.jpg" alt="" width="400" /></p>
+<p>&nbsp;</p>
+<p>改进：</p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121553528219434.jpg" alt="" width="400" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121555051028953.jpg" alt="" width="400" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121556437117494.jpg" alt="" width="400" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121557279611376.jpg" alt="" width="400" /></p>
+<p>　　为了避免求交运算，引进一套特殊的数据结构，以空间换时间：</p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121602344302848.jpg" alt="" width="400" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121607325241513.jpg" alt="" width="400" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121611596024285.jpg" alt="" width="400" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121613443058763.jpg" alt="" width="400" /></p>
+<p>　　举例如下：</p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121617538218334.jpg" alt="" width="400" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121620152111473.jpg" alt="" width="400" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121623409611549.jpg" alt="" width="400" /></p>
+<p>　　举例：</p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121627526804947.jpg" alt="" width="400" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121629222583281.jpg" alt="" width="400" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121631086188986.jpg" alt="" width="400" /></p>
+<p>　　算法描述如下：</p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121633372434147.jpg" alt="" width="400" /></p>
+<p>&nbsp;</p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121638440408819.jpg" alt="" width="400" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121639260407588.jpg" alt="" width="400" /></p>
+<p>&nbsp;</p>
+<p>其他算法：</p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121643165407902.jpg" alt="" width="400" /></p>
+<p>　　举例如下：</p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121644225241012.jpg" alt="" width="400" /></p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121647368053824.jpg" alt="" width="400" /></p>
+<p>&nbsp;</p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121647536337182.jpg" alt="" width="400" /></p>
+<p>&nbsp;</p>
+<p>　　<img src="https://images0.cnblogs.com/blog2015/683642/201504/121648467585786.jpg" alt="" width="400" /></p>
+<p>　　</p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+</div>
+	</div></div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='#' onclick='return RefreshPage();'>刷新页面</a><a href='#top'>返回顶部</a></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<div id='cnblogs_c1' class='c_ad_block'></div>
+<div id='under_post_news'></div>
+<div id='cnblogs_c2' class='c_ad_block'></div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div>
+	<div id="footer">
+		
+<p align="center">Copyright Copyright Maples7</p>
+
+
+		
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,948 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta name="shenma-site-verification" content="5a59773ab8077d4a62bf469ab966a63b_1497598848"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="referrer" content="always">
+<link href="https://csdnimg.cn//public/favicon.ico" rel="shortcut icon" />
+<link href="https://blog.csdn.net/jurbo/article/category/7014554"  rel="canonical" />
+<link href="https://blog.csdn.net/jurbo/rss/list" id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" />
+<script src="https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="https://dup.baidustatic.com/js/ds.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var CFG={
+        BASE_URL : "https://csdnimg.cn/release/phoenix/",    //当前页面对应的虚拟路径,静态资源对应目录同<base href="">
+        API_URL  : "https://blog.csdn.net/",                 //当前项目默认的后端API地址
+        ROOT_URL  : "https://blog.csdn.net/",          //当前项目根路径, JS跳转
+        STATIC_URL : "https://csdnimg.cn/release/phoenix/",          //本项目静态资源根目录
+        STATIC_GLOBAL_URL : "https://csdnimg.cn/",    //公共静态资源根目录
+        CUR_URL : "https://blog.csdn.net/jurbo/article/category/7014554",
+        SO_URL : "http://so.csdn.net/so/search/s.do"  // 站内搜索路径
+    }
+</script>
+<title>学愈进而愈惘 - CSDN博客</title>
+<meta name="keywords" content="" />
+<meta name="description" content="向 C++游戏编程进军，跳坑中~" />
+<meta name="referrer" content="always">
+<link href="https://csdnimg.cn//blog/csdn_public_blog_detail.min.css" type="text/css" rel="stylesheet"/>
+<link href="bloglist/iconfont/iconfont.css" type="text/css" rel="stylesheet"/>
+<link href="https://csdnimg.cn/release/phoenix/dotnet/skin/skin-yellow/css/style.css?v=201803221741"  rel="Stylesheet" type="text/css" />
+<script>
+    var username = "jurbo";
+    var _blogger = username;
+    var blog_address = "https://blog.csdn.net/jurbo";
+    var static_host = "https://csdnimg.cn/release/phoenix/";
+    var currentUserName = "wuzhenzi5193";
+    var islock = 0;
+    var fileName = "";
+    var commentscount = 0;
+    var curUserFace = "https://avatar.csdn.net/7/9/C/3_wuzhenzi5193.jpg";
+
+    var _key="";
+    window.quickReplyflag = true;
+    var isExpert= false;
+    var isAdm = false;
+    var categoryId = "7014554";
+    var categoryName = "3. 计算机图形学";
+    var timeLine ="3. 计算机图形学";
+</script>
+<style>
+    .gist_edit {
+        display: none;
+    }
+</style>
+</head>
+
+<body skin="skin-yellow">
+    <!--右下角广告弹窗-->
+    <link rel="stylesheet" href="https://csdnimg.cn/public/common/toolbar/content_toolbar_css/content_toolbar.css">
+<script id="toolbar-tpl-scriptId" src="https://csdnimg.cn/public/common/toolbar/js/content_toolbar.js" type="text/javascript" domain="https://blog.csdn.net/"></script>
+    <div id="container">
+        <!--header+navigator-->
+        <div id="header">
+    <div class="header">
+        <div id="blog_title">
+            <h2>
+                <a href="https://blog.csdn.net/jurbo">学愈进而愈惘</a>
+            </h2>
+            <h3>
+                向 C++游戏编程进军，跳坑中~             </h3>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+</div>
+<div id="navigator">
+    <div class="navigator_bg">
+    </div>
+    <div class="navigator">
+        <ul>
+            <li id="btnContents"><a href="https://blog.csdn.net/jurbo?viewmode=contents"><span
+                    onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_mulu'])">
+                    <img src="https://csdnimg.cn/release/phoenix/images/ico_list.gif">目录视图</span></a></li>
+            <li id="btnView"><a href="https://blog.csdn.net/jurbo?viewmode=list"><span
+                    onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_zhaiyao'])">
+                    <img src="https://csdnimg.cn/release/phoenix/images/ico_summary.gif">摘要视图</span></a></li>
+            <li id="btnRss"><a href="https://blog.csdn.net/jurbo/rss/list"><span
+                    onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_RSS'])">
+                    <img src="https://csdnimg.cn/release/phoenix/images/ico_rss.gif">订阅</span></a></li>
+                    </ul>
+    </div>
+</div>
+        <div id="body">
+            <div id="main">
+                <div class="main">
+                    <div class="ad_class">
+                    </div>
+                    <div class="search_con">
+                        <span>当前搜索：</span>
+                        <span class="search_text"></span>
+                        <svg id="return_icon" data-name="   " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
+                            <path d="M7.85,7.15,4.71,4,7.85.86a.5.5,0,1,0-.7-.71h0L4,3.29.85.15h0a.5.5,0,1,0-.7.71L3.29,4,.15,7.15h0a.5.5,0,1,0,.71.7L4,4.71,7.14,7.85a.5.5,0,1,0,.71-.7Z"/>
+                        </svg>
+                    </div>
+                    <script>
+                        if (window.location.search) {
+                            var searcharr = window.location.search.split("?")[1].split("&");
+                            for (var i = 0; i < searcharr.length; i++) {
+                                console.log(searcharr[i].indexOf("q="))
+                                if (searcharr[i].indexOf("q=") > -1) {
+                                    $('.search_text').text('');
+                                    $('.search_con').show();
+                                    continue;
+                                }
+                            }
+                        }
+                        $(document).on("click", "#return_icon", function () {
+                            window.location.href = window.location.origin + window.location.pathname
+                        })
+                    </script>
+                    <div class="list_item_new" >
+                        <!--为空时不同情况HTML-->
+                                                <!--文章列表-->
+                        <div id="article_list" class="list">
+                            <div class="list_item clearfix article_item">
+    <div class="article_title">
+        <span class="ico ico_type_Original"></span>
+        <h1>
+            <span class="link_title">
+               <a href="https://blog.csdn.net/jurbo/article/details/75151200">
+                                      计算机图形学 学习笔记（完）：局部 / 整体 光照模型，光透射模型，纹理映射和阴影处理               </a>
+            </span>
+        </h1>
+    </div>
+        <div class="article_description">
+        接上文  计算机图形学 学习笔记（十二）：颜色模型，简单 / 增量 光照模型9.4 局部光照模型和光透射模型什么是局部光照模型局部光照模型：仅处理光源直接照射物体表面的光照模型。简单光照模型是一个比较粗糙的经验模型，不足之处是：镜面反射项与物体表面的材质无关。从光电学知识和物体微平面假设出发，介绍...    </div>
+        <div class="article_manage">
+        <span class="link_postdate">2017-07-15 12:53:01</span>
+        <span class="link_view" title="阅读次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/75151200" title="阅读次数">阅读</a>(1909)
+        </span>
+        <span class="link_comments" title="评论次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/75151200#comments" title="评论次数" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(0)
+       </span>
+           </div>
+    <div class="clear"></div>
+</div>
+<div class="list_item clearfix article_item">
+    <div class="article_title">
+        <span class="ico ico_type_Original"></span>
+        <h1>
+            <span class="link_title">
+               <a href="https://blog.csdn.net/jurbo/article/details/75126026">
+                                      计算机图形学 学习笔记（十二）：颜色模型，简单 / 增量 光照模型               </a>
+            </span>
+        </h1>
+    </div>
+        <div class="article_description">
+        接上文 计算机图形学 学习笔记（十一）：曲线曲面（三）：B样条 曲线与曲面接下来将介绍真实感图形学的内容。真实感图形学包括：颜色模型，简单光照模型，增量光照模型，局部光照模型和投射模型，整体光照模型，纹理映射和阴影处理。真实感图形学真实感图形学研究的是什么？简单来说，就是希望用计算机生成像照相机拍...    </div>
+        <div class="article_manage">
+        <span class="link_postdate">2017-07-15 11:54:38</span>
+        <span class="link_view" title="阅读次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/75126026" title="阅读次数">阅读</a>(1178)
+        </span>
+        <span class="link_comments" title="评论次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/75126026#comments" title="评论次数" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(0)
+       </span>
+           </div>
+    <div class="clear"></div>
+</div>
+<div class="list_item clearfix article_item">
+    <div class="article_title">
+        <span class="ico ico_type_Original"></span>
+        <h1>
+            <span class="link_title">
+               <a href="https://blog.csdn.net/jurbo/article/details/75125663">
+                                      计算机图形学 学习笔记（十一）：曲线曲面（三）：B样条 曲线与曲面               </a>
+            </span>
+        </h1>
+    </div>
+        <div class="article_description">
+        接上文 计算机图形学 学习笔记（十）：曲线曲面（二）：Bezier 曲线与曲面8.4 B样条曲线产生背景及定义B样条产生的背景Bezier 曲线曲面有很多优点，比如说可以用鼠标拖动控制顶点以改变曲线的形状，非常直观，给设计人员很大的自由度。Bezier 曲线曲面是几何造型的主要方法和工具。但是Be...    </div>
+        <div class="article_manage">
+        <span class="link_postdate">2017-07-14 16:54:12</span>
+        <span class="link_view" title="阅读次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/75125663" title="阅读次数">阅读</a>(1851)
+        </span>
+        <span class="link_comments" title="评论次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/75125663#comments" title="评论次数" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(0)
+       </span>
+           </div>
+    <div class="clear"></div>
+</div>
+<div class="list_item clearfix article_item">
+    <div class="article_title">
+        <span class="ico ico_type_Original"></span>
+        <h1>
+            <span class="link_title">
+               <a href="https://blog.csdn.net/jurbo/article/details/75069054">
+                                      计算机图形学 学习笔记（十）：曲线曲面（二）：Bezier 曲线与曲面               </a>
+            </span>
+        </h1>
+    </div>
+        <div class="article_description">
+        接上文 计算机图形学 学习笔记（九）：曲线曲面（一）：参数曲线、参数几何代数形式7.5 Bezier 曲线背景及定义Bezier 曲线背景给定 n+1个数据点，p0 ( x0 , y0 ) … pn ( xn , yn )，生成一条曲线，使得该曲线与这些点所描述的形状相符。如果要求曲线通过所有的数...    </div>
+        <div class="article_manage">
+        <span class="link_postdate">2017-07-13 23:06:46</span>
+        <span class="link_view" title="阅读次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/75069054" title="阅读次数">阅读</a>(1704)
+        </span>
+        <span class="link_comments" title="评论次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/75069054#comments" title="评论次数" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(0)
+       </span>
+           </div>
+    <div class="clear"></div>
+</div>
+<div class="list_item clearfix article_item">
+    <div class="article_title">
+        <span class="ico ico_type_Original"></span>
+        <h1>
+            <span class="link_title">
+               <a href="https://blog.csdn.net/jurbo/article/details/75046766">
+                                      计算机图形学 学习笔记（九）：曲线曲面（一）：参数曲线、参数几何代数形式               </a>
+            </span>
+        </h1>
+    </div>
+        <div class="article_description">
+        接上文 计算机图形学 学习笔记（八）：三维图形变换：三维几何变换，投影变换（平行/ 透视 投影）计算机图形学三大块内容：光栅图形显示（前面已经介绍完了 1-8）、几何造型技术、真实感图形显示。光栅图形学是图形学的基础，有大量的思想和算法。接下来继续学习几何造型技术。几何造型技术是一项研究在计算机中...    </div>
+        <div class="article_manage">
+        <span class="link_postdate">2017-07-13 15:24:54</span>
+        <span class="link_view" title="阅读次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/75046766" title="阅读次数">阅读</a>(1931)
+        </span>
+        <span class="link_comments" title="评论次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/75046766#comments" title="评论次数" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(0)
+       </span>
+           </div>
+    <div class="clear"></div>
+</div>
+<div class="list_item clearfix article_item">
+    <div class="article_title">
+        <span class="ico ico_type_Original"></span>
+        <h1>
+            <span class="link_title">
+               <a href="https://blog.csdn.net/jurbo/article/details/75041230">
+                                      计算机图形学 学习笔记（八）：三维图形变换：三维几何变换，投影变换（平行/ 透视 投影）               </a>
+            </span>
+        </h1>
+    </div>
+        <div class="article_description">
+        接上文 计算机图形学 学习笔记（七）：二维图形变换：平移，比例，旋转，坐标变换等通过三维图形变换，可由简单图形得到复杂图形，三维图形变化则分为三维几何变换和投影变换。6.1 三维图形几何变换三维物体的几何变换是在二维方法基础上增加了对 z 坐标的考虑得到的。有关二维图形几何变换的讨论，基本上都适合...    </div>
+        <div class="article_manage">
+        <span class="link_postdate">2017-07-12 23:08:16</span>
+        <span class="link_view" title="阅读次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/75041230" title="阅读次数">阅读</a>(2083)
+        </span>
+        <span class="link_comments" title="评论次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/75041230#comments" title="评论次数" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(0)
+       </span>
+           </div>
+    <div class="clear"></div>
+</div>
+<div class="list_item clearfix article_item">
+    <div class="article_title">
+        <span class="ico ico_type_Original"></span>
+        <h1>
+            <span class="link_title">
+               <a href="https://blog.csdn.net/jurbo/article/details/75010875">
+                                      计算机图形学 学习笔记（七）：二维图形变换：平移，比例，旋转，坐标变换等               </a>
+            </span>
+        </h1>
+    </div>
+        <div class="article_description">
+        接上文 计算机图形学 学习笔记（六）：消隐算法：Z-buffer，区间扫描线，Warnock，光栅图形学小结在图形学中，有两大基本工具：向量分析，图形变换。本文将重点讲解向量和二维图形的变换。5.1 向量基础知识我们所使用的所有点和向量都是基于某一坐标系定义的，比如左手坐标系或者右手坐标系。从几何...    </div>
+        <div class="article_manage">
+        <span class="link_postdate">2017-07-12 18:59:48</span>
+        <span class="link_view" title="阅读次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/75010875" title="阅读次数">阅读</a>(3404)
+        </span>
+        <span class="link_comments" title="评论次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/75010875#comments" title="评论次数" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(0)
+       </span>
+           </div>
+    <div class="clear"></div>
+</div>
+<div class="list_item clearfix article_item">
+    <div class="article_title">
+        <span class="ico ico_type_Original"></span>
+        <h1>
+            <span class="link_title">
+               <a href="https://blog.csdn.net/jurbo/article/details/75007260">
+                                      计算机图形学 学习笔记（六）：消隐算法：Z-buffer，区间扫描线，Warnock，光栅图形学小结               </a>
+            </span>
+        </h1>
+    </div>
+        <div class="article_description">
+        接上文 计算机图形学 学习笔记（五）：多边形裁剪，文字裁剪光栅图形学算法4.1 消隐算法简介和分类消隐当我们观察空间任何一个不透明的物体时，只能看到该物体朝向我们的那些表面，其余的表面由于被物体所遮挡我们看不到。如果把可见的和不可见的线都画出来，对视觉会造成多义性。 
+要消除这种二义性，就必须在绘...    </div>
+        <div class="article_manage">
+        <span class="link_postdate">2017-07-12 14:05:25</span>
+        <span class="link_view" title="阅读次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/75007260" title="阅读次数">阅读</a>(3697)
+        </span>
+        <span class="link_comments" title="评论次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/75007260#comments" title="评论次数" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(2)
+       </span>
+           </div>
+    <div class="clear"></div>
+</div>
+<div class="list_item clearfix article_item">
+    <div class="article_title">
+        <span class="ico ico_type_Original"></span>
+        <h1>
+            <span class="link_title">
+               <a href="https://blog.csdn.net/jurbo/article/details/74999874">
+                                      计算机图形学 学习笔记（五）：多边形裁剪（Suther land-Hodgeman），文字裁剪               </a>
+            </span>
+        </h1>
+    </div>
+        <div class="article_description">
+        接上文  计算机图形学 学习笔记（四）：直线裁剪算法：Cohen-Suther land，中点分割法，Liang-Barsky光栅图形学算法3.4 多边形裁剪之前上一篇文章中，我们介绍了直线段的裁剪算法。现在我们要对多边形进行裁剪，如果还是使用直线段的裁剪算法，我们会得到一系列不连续的直线段。如下...    </div>
+        <div class="article_manage">
+        <span class="link_postdate">2017-07-11 22:44:19</span>
+        <span class="link_view" title="阅读次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/74999874" title="阅读次数">阅读</a>(948)
+        </span>
+        <span class="link_comments" title="评论次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/74999874#comments" title="评论次数" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(0)
+       </span>
+           </div>
+    <div class="clear"></div>
+</div>
+<div class="list_item clearfix article_item">
+    <div class="article_title">
+        <span class="ico ico_type_Original"></span>
+        <h1>
+            <span class="link_title">
+               <a href="https://blog.csdn.net/jurbo/article/details/74976480">
+                                      计算机图形学 学习笔记（四）：直线裁剪算法：Cohen-Suther land，中点分割法，Liang-Barsky               </a>
+            </span>
+        </h1>
+    </div>
+        <div class="article_description">
+        接上文  计算机图形学 学习笔记（三）：多边形的区域填充算法，反走样算法光栅图形学算法本文主要讲解直线裁剪算法。裁剪使用计算机处理图形信息时，计算机内部存储的图形往往比较大，而屏幕显示的知识图形的一部分。因此需要确定图形哪些部分落在显示区内，哪些落在显示区外。这个选择的过程就称为裁剪。最简单的裁剪...    </div>
+        <div class="article_manage">
+        <span class="link_postdate">2017-07-11 20:29:16</span>
+        <span class="link_view" title="阅读次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/74976480" title="阅读次数">阅读</a>(2885)
+        </span>
+        <span class="link_comments" title="评论次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/74976480#comments" title="评论次数" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(0)
+       </span>
+           </div>
+    <div class="clear"></div>
+</div>
+<div class="list_item clearfix article_item">
+    <div class="article_title">
+        <span class="ico ico_type_Original"></span>
+        <h1>
+            <span class="link_title">
+               <a href="https://blog.csdn.net/jurbo/article/details/74946754">
+                                      计算机图形学 学习笔记（三）：多边形的区域填充算法，反走样算法               </a>
+            </span>
+        </h1>
+    </div>
+        <div class="article_description">
+        接上文 计算机图形学 学习笔记（二）：多边形扫描转换：X扫描线算法 和 改进的X扫描线算法光栅图形学算法2.6 多边形的区域填充算法区域：指已经表示成点阵样式的填充图形，是像素的集合区域填充：指将区域内的一点（常称种子点）赋予给定颜色，然后将这种颜色扩展到整个区域内的过程。区域可采用* 内点表示*...    </div>
+        <div class="article_manage">
+        <span class="link_postdate">2017-07-11 15:07:22</span>
+        <span class="link_view" title="阅读次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/74946754" title="阅读次数">阅读</a>(1370)
+        </span>
+        <span class="link_comments" title="评论次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/74946754#comments" title="评论次数" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(0)
+       </span>
+           </div>
+    <div class="clear"></div>
+</div>
+<div class="list_item clearfix article_item">
+    <div class="article_title">
+        <span class="ico ico_type_Original"></span>
+        <h1>
+            <span class="link_title">
+               <a href="https://blog.csdn.net/jurbo/article/details/56678898">
+                                      计算机图形学 学习笔记（二）：多边形扫描转换：X扫描线算法 和 改进的X扫描线算法               </a>
+            </span>
+        </h1>
+    </div>
+        <div class="article_description">
+        接上文   计算机图形学 学习笔记（一）：概述，光栅图形学算法：直线扫描算法（DDA，中点画线算法，Bresenham算法）光栅图形学算法2.4 多边形扫描转换-X扫描线算法多边形的扫描转换和区域填充这个问题是怎么样在离散的像素集上表示一个连续的二维图形？多边形有两种重要的表示方法：顶点表示和点阵...    </div>
+        <div class="article_manage">
+        <span class="link_postdate">2017-02-23 19:46:24</span>
+        <span class="link_view" title="阅读次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/56678898" title="阅读次数">阅读</a>(3497)
+        </span>
+        <span class="link_comments" title="评论次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/56678898#comments" title="评论次数" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(0)
+       </span>
+           </div>
+    <div class="clear"></div>
+</div>
+<div class="list_item clearfix article_item">
+    <div class="article_title">
+        <span class="ico ico_type_Original"></span>
+        <h1>
+            <span class="link_title">
+               <a href="https://blog.csdn.net/jurbo/article/details/52653276">
+                                      计算机图形学 学习笔记（一）：概述，直线扫描转换算法：DDA，中点画线算法，Bresenham算法               </a>
+            </span>
+        </h1>
+    </div>
+        <div class="article_description">
+        前言本笔记基于 
+http://www.icourse163.org/learn/CAU-45006?tid=1001746004#/learn/announce感谢中国农大 赵明老师的分享~现在我要为我自己走向游戏编程打下基石~1 计算机图形学概论1.1 计算机图形学课程简介《计算机图形学》是计...    </div>
+        <div class="article_manage">
+        <span class="link_postdate">2016-09-24 21:33:24</span>
+        <span class="link_view" title="阅读次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/52653276" title="阅读次数">阅读</a>(3973)
+        </span>
+        <span class="link_comments" title="评论次数">
+            <a href="https://blog.csdn.net/jurbo/article/details/52653276#comments" title="评论次数" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(0)
+       </span>
+           </div>
+    <div class="clear"></div>
+</div>
+                        </div>
+                                                <div class="point_phiz"></div>
+                        <!--显示分页-->
+                        <div id="papelist">
+                            <div class="pagination-wrapper">
+                                <nav aria-label="Page navigation example">
+                                                                    </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+            <div id="side" class="side">
+    <div>
+                    <div id="panel_Profile" class="panel">
+    <ul class="panel_head"><span>个人资料</span></ul>
+    <ul class="panel_body profile">
+        <div class=" user_info">
+    <dl class="inf_bar clearfix">
+        <dt class="csdn-tracking-statistics tracking-click" data-mod="popu_381">
+                <a href="https://my.csdn.net/jurbo" target="_blank">
+                    <img src="https://avatar.csdn.net/C/C/0/3_jurbo.jpg" class="avatar_pic">
+        </a>
+      </dt><dd>
+            <h3 class="csdn-tracking-statistics tracking-click"  data-mod="popu_380"><a href="https://my.csdn.net/jurbo" target="_blank" id="uid">jurbo</a></h3>
+            <div class="medals" title="">
+                      </div>
+                        <span  class="csdn-tracking-statistics tracking-click" data-mod="popu_379"><a class="btn btn-redborder-small "  id="span_add_follow" target="_self">关注</a></span>
+                    </dd>
+    </dl>
+    <div class="inf_number_box clearfix">
+        <dl title="115">
+            <dt>原创</dt>
+            <dd>115</dd>
+        </dl>
+        <dl title="145">
+            <dt>粉丝</dt>
+            <dd id='fan'>145</dd>
+        </dl>
+        <dl title="9">
+            <dt>喜欢</dt>
+            <dd>9</dd>
+        </dl>
+        <dl title="38">
+          <dt>评论</dt>
+          <dd>38</dd>
+        </dl>
+    </div>
+
+</div>
+<div class="interflow clearfix">
+      <div class="badge gradeAndbadge">
+        <div>
+                        <img src='https://csdnimg.cn/jifen/images/xunzhang/xunzhang/zhuanlandaren.png' alt='专栏达人'>
+                                    <img src='https://csdnimg.cn/jifen/images/xunzhang/xunzhang/chizhiyiheng.png' alt='持之以恒'>
+                                            </div>
+    </div>
+      <div class="grade gradeAndbadge gradewidths">
+      <span>等级：</span>
+      <div>
+        <a href="https://blog.csdn.net/home/help.html#level" title="5级,点击查看等级说明" target="_blank">
+          <img class="grade-img" src="https://csdnimg.cn/jifen/images/xunzhang/jianzhang/blog5.png" alt="5级,点击查看等级说明">
+        </a>
+      </div>
+    </div>
+    <div class="gradeAndbadge gradewidths" title="260239">
+        <span>访问量：</span>
+        <span class="num odd-overhidden">26万+</span>
+    </div>
+
+    <div class="gradeAndbadge gradewidths" title="3344">
+      <span>积分：</span>
+      <span  class="num odd-overhidden">3344</span>
+    </div>
+    <div class="gradeAndbadge gradewidths" title="12314">
+        <span>排名：</span>
+        <span class="num odd-overhidden">1万+</span>
+    </div>
+
+</div>
+<script type="text/javascript">
+  // 判断并设置用户名位置，没有博客专家与关注按钮时，用户名居中
+  $medals_children = $('.medals').children().length;
+  $span_add_follow = $('#span_add_follow').length;
+  if($medals_children === 0 && $span_add_follow === 0){
+    $('.inf_bar dd').css('vertical-align','10px')
+  }
+</script>    </ul>
+</div>
+
+                            <div id="homepageArticles" class="panel csdn-tracking-statistics" data-pid="blog" data-mod="popu_4" style="height:250px;">
+    <div id="cpro_u2734133" style="text-align:center;">
+        <!-- 投放代码 -->
+        <script type="text/javascript" src="//cee1.iteye.com/lgyyovfyh.js"></script>
+    </div>
+</div>
+                                <!--自定义模块-->
+<div id="custom_column_61823680" class="panel">
+    <ul class="panel_head"><span>关于我</span></ul>
+    <ul class="panel_body">
+        
+<p>现在还处于探索世界的阶段，学的比较杂。关注游戏编程，以及要开始准备考研了，所以有些专业课也会写上来。</p>
+<br>
+<p>这学期课很多，平衡课业和空闲。未完成的系列文章会慢慢更新的。</p>
+<br>
+<p>“每天都要保持前进，我势必要有强劲的实力，再跟全新的自己问好”</p>
+    </ul>
+</div>
+
+                                <div id="panel_Category" class="panel">
+    <ul class="panel_head"><span>文章分类</span></ul>
+    <ul class="panel_body">
+                        <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/7014573" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                ?.游戏编程入门            </a>
+            <span>(22)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/6326434" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                1. C++            </a>
+            <span>(7)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/6424434" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                2. 数据结构            </a>
+            <span>(12)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/7014554" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                3. 计算机图形学            </a>
+            <span>(13)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/7014567" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                4. 游戏开发中的人工智能            </a>
+            <span>(15)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/7038349" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                5. Windows程序设计            </a>
+            <span>(1)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/7014575" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                11. Unity            </a>
+            <span>(1)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/7170552" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                编译原理            </a>
+            <span>(3)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/7226069" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                计算机组成原理            </a>
+            <span>(2)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/6326435" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                Phython            </a>
+            <span>(10)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/6333603" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                数据库            </a>
+            <span>(14)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/6326417" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                Web 开发            </a>
+            <span>(7)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/6978438" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                信息安全            </a>
+            <span>(3)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/6326421" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                开发经验+错误调试            </a>
+            <span>(12)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/6285844" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                ASP.NET            </a>
+            <span>(2)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/6433542" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                PHP            </a>
+            <span>(6)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/6285846" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                JAVA            </a>
+            <span>(1)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/6285860" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                开发工具            </a>
+            <span>(2)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/6326422" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                随笔            </a>
+            <span>(4)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/category/7207699" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">
+                Matlab            </a>
+            <span>(2)</span>
+        </li>
+                    </ul>
+</div>
+
+                                <div id="panel_Category" class="panel">
+    <ul class="panel_head">
+        <span>博客专栏</span>
+    </ul>
+    <ul class="panel_body" id="sp_column">
+                <table cellpadding="0" cellspacing="0">
+                        <tr>
+                <td style="padding:10px 10px 0 0;">
+                	<a href="https://blog.csdn.net/column/details/16156.html" target="_blank">
+                        <img src="https://img-blog.csdn.net/20170701105610869" style="width:75px;height:75px;" />
+                    </a>
+                </td>
+                <td style="padding:10px 0; vertical-align:top;">
+                    <a href="https://blog.csdn.net/column/details/16156.html" target="_blank">游戏编程入门</a>
+                    <p>文章：22篇</p>
+                    <span>阅读：27184</span>
+                </td>
+            </tr>
+                        <tr>
+                <td style="padding:10px 10px 0 0;">
+                	<a href="https://blog.csdn.net/column/details/16202.html" target="_blank">
+                        <img src="https://img-blog.csdn.net/20170704184727902" style="width:75px;height:75px;" />
+                    </a>
+                </td>
+                <td style="padding:10px 0; vertical-align:top;">
+                    <a href="https://blog.csdn.net/column/details/16202.html" target="_blank">计算机图形学</a>
+                    <p>文章：13篇</p>
+                    <span>阅读：30377</span>
+                </td>
+            </tr>
+                        <tr>
+                <td style="padding:10px 10px 0 0;">
+                	<a href="https://blog.csdn.net/column/details/16261.html" target="_blank">
+                        <img src="https://img-blog.csdn.net/20170704190850318" style="width:75px;height:75px;" />
+                    </a>
+                </td>
+                <td style="padding:10px 0; vertical-align:top;">
+                    <a href="https://blog.csdn.net/column/details/16261.html" target="_blank">数据结构</a>
+                    <p>文章：12篇</p>
+                    <span>阅读：14925</span>
+                </td>
+            </tr>
+                        <tr>
+                <td style="padding:10px 10px 0 0;">
+                	<a href="https://blog.csdn.net/column/details/16418.html" target="_blank">
+                        <img src="https://img-blog.csdn.net/20170717173950301" style="width:75px;height:75px;" />
+                    </a>
+                </td>
+                <td style="padding:10px 0; vertical-align:top;">
+                    <a href="https://blog.csdn.net/column/details/16418.html" target="_blank">游戏开发中的人工智能</a>
+                    <p>文章：15篇</p>
+                    <span>阅读：17110</span>
+                </td>
+            </tr>
+                    </table>
+            </ul>
+</div>
+
+                                <div id="hotarticls" class="panel csdn-tracking-statistics" data-pid="blog" data-mod="popu_340">
+    <ul class="panel_head"><span>阅读排行</span></ul>
+    <ul class="panel_body itemlist">
+                        <li>
+            <a href="https://blog.csdn.net/jurbo/article/details/52313636" title="Python中的urllib.request模块">
+                Python中的urllib.request模块            </a>
+            <span>(39043)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/details/52334345" title="Python 标准库一览（Python进阶学习）">
+                Python 标准库一览（Python进阶学习）            </a>
+            <span>(25828)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/details/52691643" title="超详细 PHP 开发环境配置：WampServer+ZendStudio+XDebug">
+                超详细 PHP 开发环境配置：WampServer+ZendStudio+XDebug            </a>
+            <span>(8009)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/details/52326999" title="Python中urllib.request模块的Request对象">
+                Python中urllib.request模块的Request对象            </a>
+            <span>(7671)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/details/52136323" title="Python challenge通关代码及攻略（0-8）">
+                Python challenge通关代码及攻略（0-8）            </a>
+            <span>(5296)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/details/52351881" title="ASP.NET基础与入门：WebForm，事件驱动编程，Page类">
+                ASP.NET基础与入门：WebForm，事件驱动编程，Page类            </a>
+            <span>(5173)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/details/52043128" title="IT职业技能图谱：IT工程师学习路线">
+                IT职业技能图谱：IT工程师学习路线            </a>
+            <span>(5004)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/details/52204065" title="Python持久化管理pickle模块  笔记">
+                Python持久化管理pickle模块  笔记            </a>
+            <span>(3947)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/details/52653276" title="计算机图形学 学习笔记（一）：概述，直线扫描转换算法：DDA，中点画线算法，Bresenham算法">
+                计算机图形学 学习笔记（一）：概述，直线扫描转换算法：DDA，中点画线算法，Bresenham算法            </a>
+            <span>(3933)</span>
+        </li>
+                <li>
+            <a href="https://blog.csdn.net/jurbo/article/details/75007260" title="计算机图形学 学习笔记（六）：消隐算法：Z-buffer，区间扫描线，Warnock，光栅图形学小结">
+                计算机图形学 学习笔记（六）：消隐算法：Z-buffer，区间扫描线，Warnock，光栅图形学小结            </a>
+            <span>(3660)</span>
+        </li>
+                    </ul>
+</div>
+
+                                <div id="panel_Archive" class="panel">
+    <ul class="panel_head"><span>文章存档</span></ul>
+    <ul class="panel_body">
+        <div id="archive_list">
+                        <!--归档统计-->
+            <li>
+               <a href="https://blog.csdn.net/jurbo/article/month/2017/11">2017年11月</a>
+               <span>(2)</span>
+            </li>
+                        <!--归档统计-->
+            <li>
+               <a href="https://blog.csdn.net/jurbo/article/month/2017/10">2017年10月</a>
+               <span>(4)</span>
+            </li>
+                        <!--归档统计-->
+            <li>
+               <a href="https://blog.csdn.net/jurbo/article/month/2017/09">2017年9月</a>
+               <span>(3)</span>
+            </li>
+                        <!--归档统计-->
+            <li>
+               <a href="https://blog.csdn.net/jurbo/article/month/2017/08">2017年8月</a>
+               <span>(3)</span>
+            </li>
+                        <!--归档统计-->
+            <li>
+               <a href="https://blog.csdn.net/jurbo/article/month/2017/07">2017年7月</a>
+               <span>(48)</span>
+            </li>
+                        <!--归档统计-->
+            <li>
+               <a href="https://blog.csdn.net/jurbo/article/month/2017/06">2017年6月</a>
+               <span>(10)</span>
+            </li>
+                        <!--归档统计-->
+            <li>
+               <a href="https://blog.csdn.net/jurbo/article/month/2017/03">2017年3月</a>
+               <span>(1)</span>
+            </li>
+                        <!--归档统计-->
+            <li>
+               <a href="https://blog.csdn.net/jurbo/article/month/2017/02">2017年2月</a>
+               <span>(1)</span>
+            </li>
+                        <!--归档统计-->
+            <li>
+               <a href="https://blog.csdn.net/jurbo/article/month/2017/01">2017年1月</a>
+               <span>(3)</span>
+            </li>
+                        <!--归档统计-->
+            <li>
+               <a href="https://blog.csdn.net/jurbo/article/month/2016/09">2016年9月</a>
+               <span>(24)</span>
+            </li>
+                        <!--归档统计-->
+            <li>
+               <a href="https://blog.csdn.net/jurbo/article/month/2016/08">2016年8月</a>
+               <span>(16)</span>
+            </li>
+                        <!--归档统计-->
+            <li>
+               <a href="https://blog.csdn.net/jurbo/article/month/2016/07">2016年7月</a>
+               <span>(11)</span>
+            </li>
+                    </div>
+    </ul>
+</div>
+
+                                <div class="panel" id="panel_Search">
+    <ul class="panel_head"><span>文章搜索</span></ul>
+    <ul class="panel_body" class="form_search">
+        <form id="frmSearch" class="form_search csdn-tracking-statistics" data-pid="blog" target="_blank" data-mod="popu_306">
+            <span><input id="inputSearch" type="text" class="blogsearch" title="请输入关键字"/></span>
+            <input id="btnSubmit" type="button" value="搜索" title="search in blog"/>
+        </form>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#btnSubmit").unbind("click");
+        $("#btnSubmit").click(function () {
+            search();
+        });
+
+        $("#frmSearch").submit(function () {
+            search();
+            return false;
+        });
+        function search() {
+            if ($("#inputSearch").val() == "") {
+                alert("请录入搜索关键词！");
+                return false;
+            }
+            var url = CFG.SO_URL + "?q=" + encodeURIComponent($("#inputSearch").val())+'&t=blog&u='+username;
+            // window.location.href = url;
+            window.open(url)
+        }
+    });
+</script>
+
+                            <div id="nav_show_top_stop" class="clearfix" style="z-index:1000;width:300px;">
+                          <div id="cpro_u3031286" class="csdn-tracking-statistics" data-pid="blog" data-view="true" data-mod="ad_popu_189" data-mtp="63"
+                    data-order="40" data-con="ad_content_1259" style="text-align:center;background-color:#fff;">
+                   <!-- 投放代码 -->
+                   <script type="text/javascript" src="//cee1.iteye.com/mhzzpwgzj.js"></script>
+               </div>
+                        <div class="persion_article"></div>
+        </div>
+        <script type="text/javascript">
+            var naviga_offsetTop;
+            $(function(){
+                resetleftTop();
+                $(window).scroll(function(){
+                    var scrollTop = $(document).scrollTop();
+
+                    if (scrollTop > naviga_offsetTop) {
+                        jQuery("#nav_show_top_stop").css({"position": "fixed"});
+                        jQuery("#nav_show_top_stop").css({"top": "2px"});
+                    } else {
+                        jQuery("#nav_show_top_stop").css({"position": "static"});
+                    }
+                });
+            });
+
+            function resetleftTop(){
+                naviga_offsetTop = $("#nav_show_top_stop").position().top;
+            }
+
+        </script>
+    </div>
+    <div class="clear"></div>
+</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <script src="https://csdnimg.cn/release/phoenix/dotnet/js/blog_detail-c9586f5a93.js" type="text/javascript"></script>
+    <div id="a52b5334d" style="width: 1px; height: 1px; display: none;">
+       <script id="adJs52b5334"></script>
+       <script>document.getElementById("adJs52b5334").src = "https://ads.csdn.net/js/opt/52b5334.js?t=" + Math.random();</script>
+    </div>
+    <!--<div class="pop_CA_cover" style="display:none"></div>-->
+    <!--右下角弹窗广告-->
+<div class="csdn-tracking-statistics" data-pid="blog" data-view="true" data-mod="ad_popu_72" data-mtp="62"
+     data-order="40" data-con="ad_content_2072">
+    <!--右下角弹窗广告-->
+    <script id="popuLayer_js_q" src="//ads.csdn.net/js/popuLayer.js" defer="defer" type="text/javascript"></script>
+    <div id="layerd" style="position: fixed;bottom:0px;right:0px;line-height:0px;display:none;z-index:1000;" >
+        <div class="J_close layer_close"
+             style="background-color:#efefef;padding:0px;color:#333;font:12px/24px Helvetica,Tahoma,Arial,sans-serif;text-align:right;">
+            关闭
+        </div>
+        <!-- 广告占位容器 -->
+        <div id="cpro_u3026784">
+            <!-- 列表页广告 -->
+                    <script type="text/javascript" src="//cee1.iteye.com/hculebler.js"></script>
+                </div>
+    </div>
+    <script type='text/javascript'>
+        document.getElementById("popuLayer_js_q").onload = function () {
+            var styObjd = styObj = {width: "250px", "height": parseInt(250) + 28};
+            window.CSDN.Layer.PopuLayer("#layerd", {
+                storageName: "layerd",
+                styleObj: styObjd,
+                total: 50,
+                expoire: 1000 * 60
+            });
+        }
+        $(function(){
+          function resize_show(){
+            var win_width = $(window).width();
+            if(win_width>1680){
+              $('#layerd').fadeIn()
+            }else{
+              $('#layerd').hide()
+            }
+          }
+          resize_show();
+          $(window).resize(resize_show);
+        })
+    </script>
+</div>
+    <div style="display:none;">
+    <img src="" onerror='setTimeout(function(){if(!/(csdn.net|iteye.com|baiducontent.com|googleusercontent.com|360webcache.com|sogoucdn.com|bingj.com|baidu.com)$/.test(window.location.hostname)){window.location. href="\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x63\x73\x64\x6e\x2e\x6e\x65\x74"}},3000);'>
+</div>
+<script src="https://csdnimg.cn/pubfooter/js/publib_footer-1.0.3.js?20180309"  type="text/javascript"></script>
+<script src="https://csdnimg.cn//release/phoenix/bloglist/iconfont/iconfont.js?v=2017.065"  type="text/javascript" ></script>
+    <script src='https://csdnimg.cn/public/common/gotop/js/goTop-v1.0.min.js?v201803151422'></script>
+</body>
+</html>
