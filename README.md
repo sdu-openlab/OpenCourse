@@ -118,6 +118,14 @@ Issue、PR、纠错、资料、选课/考试攻略，Totally Accepts.
 - 如果对git不太熟悉，建议（在备份完成后）先删除你的项目，重新 fork 、上传并重新提交 PR 。
 - 如果对git及其工作原理较为熟悉（而且愿意花费时间和流量折腾），可以尝试在 fork 出的项目上进行 rebase 以消除与主分支在历史上的冲突。
 
+
+## 如何更方便的下载
+
+有些朋友可能仅需下载部分课程资料（即部分文件夹），而无需clone整个项目
+关于这种下载需求，可以访问
+https://github.dev/sdu-openlab/OpenCourse
+这是仓库的在线Dev页面，其UI类似于 VS Code，你可以右键单击你想要下载的目录或文件并点击Download，即可方便的下载整个目录。
+
 ## 注意事项与警告
 
 下列内容为不适合上传的内容。如果你认为缺少这些资料将会影响资源的完整性，请优先考虑放在校内资源平台，或联系你的教师并由教师发布。建议你撰写一个 README 文档并放置一些链接或指引文字来帮助找到这些资源。
@@ -156,6 +164,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 ### 最初灵感与论坛建设者
 
 此仓库有前身名为 bitcross 的校内论坛(by qer, Conyrol)，但因审查原因未经上线，一年后仓库建成，承担相同职能。
+
 
 ## 许可
 
