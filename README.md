@@ -165,7 +165,6 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 此仓库有前身名为 bitcross 的校内论坛(by qer, Conyrol)，但因审查原因未经上线，一年后仓库建成，承担相同职能。
 
-
 ## 许可
 
 由贡献者编写部分的许可如下：
